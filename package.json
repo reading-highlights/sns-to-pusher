@@ -1,0 +1,26 @@
+{
+  "name": "sns-to-pusher",
+  "version": "1.0.0",
+  "description": "Forward Cloudwatch error from SNS to Pusher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "zip -r lambda-code.zip index.js config.json node_modules; echo \"*** Now upload lambda-code.zip to AWS Lambda\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:reading-highlights/sns-to-pusher.git"
+  },
+  "keywords": [
+    "pusher",
+    "highlights",
+    "aws",
+    "sns"
+  ],
+  "author": "Chris Castle",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "restler-bluebird": "^0.2.2"
+  }
+}
